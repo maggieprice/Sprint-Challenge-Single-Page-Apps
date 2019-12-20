@@ -11,7 +11,6 @@ export default function App() {
   return (
     <main>
     <Router>
-   
       <Header />
       <div>
       <nav className="main-nav">
