@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route,
 
 export default function App() {
   return (
+    <main>
     <Router>
    
       <Header />
@@ -30,5 +31,6 @@ export default function App() {
       </div>
     
     </Router>
+    </main>
   );
 }
