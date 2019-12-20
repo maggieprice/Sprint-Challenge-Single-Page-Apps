@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function SearchForm() {
- 
+export default function SearchForm(props) {
+  
+  const handleInputChange = event => {
+    props.setQuery(event.target.value);
+  };
+
   return (
     <section className="search-form">
-     // Add a search form here
+     <form className="search">
+              <input
+                onChange={handleInputChange}
+                value={props.query}
+              />
+            </form>
     </section>
   );
 }

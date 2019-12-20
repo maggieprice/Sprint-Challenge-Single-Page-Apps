@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  CardImg,
   CardBody,
   CardTitle,
   CardSubtitle,
@@ -11,12 +10,17 @@ export default function CharacterCard(props) {
   return <span>
     <div>
   <Card>
-      <CardBody>
+      <CardBody className="card-body">
           <CardTitle><h2>Name:{props.x.name}</h2></CardTitle>
-          <CardImg top width="100%" src={props.image} alt="Card image" />
               <CardSubtitle>
-                  <h3>Status: {props.x.status} | Species:{props.x.species} | Gender: {props.x.gender}</h3> 
-              </CardSubtitle>       
+                  <h3>Status: {props.x.status}</h3> 
+              </CardSubtitle>
+              <CardSubtitle>
+                  <h3>Species:{props.x.species}</h3> 
+              </CardSubtitle> 
+              <CardSubtitle>
+                  <h3>Gender: {props.x.gender}</h3> 
+              </CardSubtitle>        
       </CardBody>
   </Card>
 </div></span>;
